@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Знакомство с JavaScript</title>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+	<h1>Конспект «Циклы». Часть 2</h1>
+	<h2>Цикл while</h2>
+	<h3>Синтаксис</h3>
+	<p><pre class="code">
+	while (условие) {
+	  действия
+	}</pre></p>
+	<p>Действия будут выполняться снова и снова пока условие не вернёт false.</p>
+
+	<h3>Накопление значений в цикле</h3>
+	<p><pre class="code">
+	var sum = 0;
+	var i = 0;
+
+	while (i <= 5) {
+	  sum += 1;
+	  i++;
+	  console.log(i);
+	}</pre></p>
+
+	<p>Программа выведет:</p>
+	<p><pre class="code">
+	LOG: 1 (number)
+	LOG: 2 (number)
+	LOG: 3 (number)
+	LOG: 4 (number)
+	LOG: 5 (number)
+	LOG: 6 (number) // Код из тела цикла не выполнится, условие вернёт false
+	</pre></p>
+	
+	<h3>Поиск процента от числа</h3>
+	<p>Самый простой способ найти процент от числа — разделить число на 100 и умножить на процент.</p>
+	<p><pre class="code">
+	// Найдём 2 процента от 1000
+	1000 / 100 * 2 = 20;
+
+	// Найдём 7 процентов от 1200
+	1200 / 100 * 7 = 84;
+	</pre></p>
+  </body>
+</html>
